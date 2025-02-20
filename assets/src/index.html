@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<title> 
+    Joke bapak-bapuck
+    <!-- felix siahaan -->
+</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Static Website</title>
+    <base href="/">
+
+    <link type="text/css" rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <dif class="container">
+        <h1>Joke bapak-bapuck</h1>
+        <p id="joke">I am so good at sleeping I can do it with my eyes closed!</p>
+        <button onclick="getJoke()">Get Another Joke</button>
+    </div>
+
+    <script>
+        const jokes = [
+            "I am so good at sleeping I can do it with my eyes closed!",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "Why don’t skeletons fight each other? They don’t have the guts.",
+            "What do you call fake spaghetti? An impasta!"
+        ];
+        
+        function getJoke() {
+            const jokeElement = document.getElementById("joke");
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            jokeElement.textContent = jokes[randomIndex];
+        }
+    </script>
+
+    <div class="footer">
+        <h3>Deployed Fully OnChain On</h3>
+        <img src="logo.png" alt="DFINITY logo" />
+    </div>
+
+    
+</body>
+</html>
